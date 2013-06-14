@@ -14,7 +14,7 @@ module Draper
 
     array_methods = Array.instance_methods - Object.instance_methods
     delegate :==, *array_methods, to: :decorated_collection
-    delegate :as_json, :to_json, to: :source
+    delegate :as_json, :to_json, to: :object
 
     # @param [Enumerable] object
     #   collection to decorate.
